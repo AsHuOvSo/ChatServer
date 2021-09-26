@@ -64,7 +64,7 @@ public class ChatClient {
 
     private void run() throws IOException {
         try {
-            var socket = new Socket(serverAddress, 59001);
+            var socket = new Socket(serverAddress, 59001);;
             in = new Scanner(socket.getInputStream());
             out = new PrintWriter(socket.getOutputStream(), true);
 
